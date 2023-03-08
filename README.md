@@ -1,1 +1,1 @@
-# SmartCityApp
+# SmartCityApp for Hackathons
