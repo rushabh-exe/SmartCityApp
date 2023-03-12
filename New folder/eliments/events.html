@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #F2B33D;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 48px;
+        color: #FFFFFF;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .event-poster {
+        margin-bottom: 20px;
+    }
+
+    .event-poster img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .event-description p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    @media only screen and (min-width: 600px) {
+        main {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .event-poster {
+            margin-right: 20px;
+            margin-bottom: 0;
+        }
+
+        .event-description p {
+            font-size: 24px;
+        }
+    }
+
+    .upload_content {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 30px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border: none;
+        cursor: pointer;
+    }
+li{
+    list-style: none;
+    padding-right: 5%;
+}
+    .upload_post {
+        display: flex;
+        justify-content: center;
+    }
+
+    .update_page {
+        background-color: rgb(230, 230, 230);
+        border-radius: 10px;
+        padding: 10px 10px 10px 10px;
+        margin-top: 10px;
+    }
+
+    .navigation {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+
+    }
+
+    .navigation h3 {
+        margin: 0;
+    }
+
+    #btn1 {
+        background-color: #4cafaa;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #btn1:hover {
+        background-color: #638b65;
+    }
+</style>
+
+<body>
+    <nav class="navigation">
+        <h3>Username</h3>
+        <a href="main.html"><button id="btn1">Home Page</button></a>
+    </nav>
+    <div class="updatepage">
+        <ul>
+            <li>
+                <header>
+                    <h1>Event Name</h1>
+                </header>
+                <main>
+                    <div class="event-poster">
+                        <img src="https://1.bp.blogspot.com/-cCXeUKsTQ38/WJ7k8v6YcNI/AAAAAAAAKTk/XuPbEXQQuQAvdoDs4biigKNmVyk45P7ZACLcB/s1600/IMG_5471.JPG"
+                            alt="Event Poster">
+                    </div>
+
+                    <div class="event-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum aliquam,
+                            nulla non efficitur faucibus, est ipsum blandit sapien, nec interdum diam diam ut diam.
+                            Fusce
+                            lacinia euismod sem, sed feugiat neque bibendum in. </p>
+                    </div>
+                </main>
+            </li>
+            <li>
+                <header>
+                    <h1>Event Name</h1>
+                </header>
+                <main>
+                    <div class="event-poster">
+                        <img src="https://1.bp.blogspot.com/-cCXeUKsTQ38/WJ7k8v6YcNI/AAAAAAAAKTk/XuPbEXQQuQAvdoDs4biigKNmVyk45P7ZACLcB/s1600/IMG_5471.JPG"
+                            alt="Event Poster">
+                    </div>
+
+                    <div class="event-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum aliquam,
+                            nulla non efficitur faucibus, est ipsum blandit sapien, nec interdum diam diam ut diam.
+                            Fusce
+                            lacinia euismod sem, sed feugiat neque bibendum in. </p>
+                    </div>
+                </main>
+            </li>
+            <li>
+                <header>
+                    <h1>Event Name</h1>
+                </header>
+                <main>
+                    <div class="event-poster">
+                        <img src="https://1.bp.blogspot.com/-cCXeUKsTQ38/WJ7k8v6YcNI/AAAAAAAAKTk/XuPbEXQQuQAvdoDs4biigKNmVyk45P7ZACLcB/s1600/IMG_5471.JPG"
+                            alt="Event Poster">
+                    </div>
+
+                    <div class="event-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum aliquam,
+                            nulla non efficitur faucibus, est ipsum blandit sapien, nec interdum diam diam ut diam.
+                            Fusce
+                            lacinia euismod sem, sed feugiat neque bibendum in. </p>
+                    </div>
+                </main>
+            </li>
+        </ul>
+    </div>
+    <div class="upload_post">
+        <button class="upload_content">+</button>
+    </div>
+</body>
+
+</html>
