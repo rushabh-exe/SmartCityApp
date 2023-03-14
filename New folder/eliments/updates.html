@@ -5,115 +5,444 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>updates</title>
-    <style>
-body{
-    background-color: rgb(73, 73, 73);
-    margin: 5px 5px 5px 5px;
-    padding: 10px 10px 10px 10px;
-}
-.navigation {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-.navigation h3 {
-  margin: 0;
-}
-
-#btn1 {
-  background-color: #4cafaa;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-#btn1:hover {
-  background-color: #3e8e41;
-}
-.update_page{
-    background-color: aliceblue;
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px;
-    margin-top: 10px;
-}
-li{
-   background-color: rgb(143, 164, 181);
-   list-style: none;
-   margin: 10px 10px 10px -30px;
-   padding: 8px 8px 8px 8px;
-   border-radius: 10px;
-}
-.user_log{
-    display: flex;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-.content_text{
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-}
-.upload_post {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 10px 10px 10px;
-}
-
-.upload_content {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 30px;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  border: none;
-  cursor: pointer;
-}
-
-    </style>
+    <title>Document</title>
 </head>
+<style>
+    .w-icon-slider-right:before {
+        content: "\e600"
+    }
+
+    .w-icon-slider-left:before {
+        content: "\e601"
+    }
+
+    .w-icon-nav-menu:before {
+        content: "\e602"
+    }
+
+    .w-icon-arrow-down:before,
+    .w-icon-dropdown-toggle:before {
+        content: "\e603"
+    }
+
+    .w-icon-file-upload-remove:before {
+        content: "\e900"
+    }
+
+    .w-icon-file-upload-icon:before {
+        content: "\e903"
+    }
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    html {
+        height: 100%
+    }
+
+    body {
+        margin: 0;
+        min-height: 100%;
+        background-color: #fff;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #333
+    }
+
+
+
+    html.w-mod-touch * {
+        background-attachment: scroll !important
+    }
+
+    .w-block {
+        display: block
+    }
+
+    .w-inline-block {
+        max-width: 100%;
+        display: inline-block
+    }
+
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        color: #333;
+        font-size: 16px;
+        line-height: 135%;
+    }
+
+
+
+    .content {
+        width: 75%;
+        margin-left: 25%;
+        padding: 50px;
+    }
+
+    .post-title-section {
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #dadada;
+        text-align: center;
+    }
+
+    .sidebar-column {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 25%;
+        height: 100%;
+        padding: 50px 40px;
+        background-color: #333;
+        color: #9b9b9b;
+    }
+
+    .divider {
+        width: 70%;
+        height: 1px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #5e5e5e;
+    }
+
+    .blog-list {
+        display: block;
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .div-block {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
+    .div-block-2 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #333;
+    }
+
+    .heading {
+        color: #ecf0f1;
+    }
+
+    .hvr:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 991px) {
+        .navigation-bar {
+            max-width: none;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        .navigation-menu {
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #333;
+            display: flex;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        .post-wrapper {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+        }
+
+
+
+        .section-header {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+        }
+
+        .main-subheading {
+            margin-top: 0px;
+        }
+
+        .content {
+            width: 100%;
+            margin-left: 0%;
+            padding: 30px 20px;
+        }
+
+        .sidebar-column {
+            position: static;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .divider {
+            display: block;
+            width: 30%;
+            margin: 14px auto;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        h1 {
+            font-size: 31px;
+            line-height: 38px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navigation-menu {
+            margin-top: 20px;
+        }
+
+        .nav-link {
+            display: block;
+        }
+
+        .post-wrapper {
+            margin-right: 0%;
+            margin-bottom: 20px;
+            margin-left: 0%;
+            padding-bottom: 20px;
+        }
+
+        .body-copy blockquote {
+            margin-left: 0px;
+        }
+
+
+
+        .blog-title {
+            font-size: 27px;
+            line-height: 36px;
+        }
+
+        .section-header {
+            margin-right: 0px;
+            margin-bottom: 20px;
+            margin-left: 0px;
+            padding-bottom: 20px;
+        }
+
+        .main-subheading {
+            width: auto;
+        }
+
+        .content {
+            padding: 20px 10px;
+        }
+
+        .post-title-section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        .sidebar-column {
+            padding: 10px;
+        }
+
+    }
+
+    @media screen and (max-width: 479px) {
+        .nav-link {
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+
+        .social-link-group {
+            margin-top: 0px;
+        }
+
+        .blog-title {
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        .main-subheading {
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 150%;
+        }
+    }
+
+    .upload {
+        display: flex;
+        justify-content: center;
+    }
+
+    .upl {
+        font-size: 20px;
+        border-radius: 100%;
+        color: white;
+        background-color: rgb(58, 58, 58);
+        border: 10px solid rgb(64, 64, 64);
+    }
+</style>
 
 <body>
-    <div class="page">
-        <nav class="navigation">
-            <h3>Username</h3>
-            <a href="/New folder/main page/main.html"><button id="btn1">Home Page</button></a>
-        </nav>
-        <div class="update_page">
-            <ul>
-                <li><div><div class="post">
-                    <div class="user_log"><img src="#" alt="#"><h3 class="username">username</h3></div>
-                    <div class="content_text">this is the updated content / news bla bla bla bla bla bla bla bla bla bla bla </div>
-                </div></li>
-                <li><div><div class="post">
-                    <div class="user_log"><img src="#" alt="#"><h3 class="username">username</h3></div>
-                    <div class="content_text">this is the updated content / news bla bla bla bla bla bla bla bla bla bla bla </div>
-                </div></li>
-                <li><div><div class="post">
-                    <div class="user_log"><img src="#" alt="#"><h3 class="username">username</h3></div>
-                    <div class="content_text">this is the updated content / news bla bla bla bla bla bla bla bla bla bla bla </div>
-                </div></li>
-                <li><div><div class="post">
-                    <div class="user_log"><img src="#" alt="#"><h3 class="username">username</h3></div>
-                    <div class="content_text">this is the updated content / news bla bla bla bla bla bla bla bla bla bla bla </div>
-                </div></li>
-                <li><div><div class="post">
-                    <div class="user_log"><img src="#" alt="#"><h3 class="username">username</h3></div>
-                    <div class="content_text">this is the updated content / news bla bla bla bla bla bla bla bla bla bla bla </div>
-                </div></li>
-            </ul>
-        </div>
-        <div class="upload_post">
-              <button class="upload_content">+</button>
+
+    <div class="sidebar-column">
+        <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
+            role="banner" class="navigation-bar w-nav">
+            <div class="w-container">
+                <h1 style="color:white;">Username</h1>
+                <nav role="navigation" class="navigation-menu w-nav-menu">
+                    <div class="divider w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                    <div class="hvr">Home&nbsp;</div>
+                    <div class="hvr">About&nbsp;</div>
+                    <div class="hvr">LogOut</div>
+                    <div class="divider"></div>
+                </nav>
+            </div>
+            <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-1"></div>
         </div>
     </div>
+    <div class="content">
+        <div class="div-block-2">
+            <h1 class="heading">Updates</h1>
+        </div>
+        <div class="eventbox">
+            <ul role="list" class="w-list-unstyled">
+                <li>
+                    <div class="div-block">
+                        <h4>Heading</h4>
+                    </div>
+                    <div>
+                        <p>The English Wikipedia is, with the Simple English Wikipedia, one of two English-language
+                            editions of Wikipedia, an online encyclopedia. It was founded on January 15, 2001, as
+                            Wikipedia's first edition, and, as of March 3, 2023, has the most articles of any edition,
+                            at 6,625,729</p>
+                    </div>
+                    <div class="divider w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                </li>
+                <li>
+                    <div class="div-block">
+                        <h4>Heading</h4>
+                    </div>
+                    <div>
+                        <p>The English Wikipedia is, with the Simple English Wikipedia, one of two English-language
+                            editions of Wikipedia, an online encyclopedia. It was founded on January 15, 2001, as
+                            Wikipedia's first edition, and, as of March 3, 2023, has the most articles of any edition,
+                            at 6,625,729</p>
+                    </div>
+                    <div class="divider w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                </li>
+                <li>
+                    <div class="div-block">
+                        <h4>Heading</h4>
+                    </div>
+                    <div>
+                        <p>The English Wikipedia is, with the Simple English Wikipedia, one of two English-language
+                            editions of Wikipedia, an online encyclopedia. It was founded on January 15, 2001, as
+                            Wikipedia's first edition, and, as of March 3, 2023, has the most articles of any edition,
+                            at 6,625,729</p>
+                    </div>
+                    <div class="divider w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                </li>
+                <li>
+                    <div class="div-block">
+                        <h4>Heading</h4>
+                    </div>
+                    <div>
+                        <p>The English Wikipedia is, with the Simple English Wikipedia, one of two English-language
+                            editions of Wikipedia, an online encyclopedia. It was founded on January 15, 2001, as
+                            Wikipedia's first edition, and, as of March 3, 2023, has the most articles of any edition,
+                            at 6,625,729</p>
+                    </div>
+                    <div class="divider w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                </li>
+                <li>
+                    <div class="div-block">
+                        <h4>Heading</h4>
+                    </div>
+                    <div>
+                        <p>The English Wikipedia is, with the Simple English Wikipedia, one of two English-language
+                            editions of Wikipedia, an online encyclopedia. It was founded on January 15, 2001, as
+                            Wikipedia's first edition, and, as of March 3, 2023, has the most articles of any edition,
+                            at 6,625,729</p>
+                    </div>
+                    <div class="divider w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                </li>
+                <li>
+                    <div class="div-block">
+                        <h4>Heading</h4>
+                    </div>
+                    <div>
+                        <p>The English Wikipedia is, with the Simple English Wikipedia, one of two English-language
+                            editions of Wikipedia, an online encyclopedia. It was founded on January 15, 2001, as
+                            Wikipedia's first edition, and, as of March 3, 2023, has the most articles of any edition,
+                            at 6,625,729</p>
+                    </div>
+                    <div class="divider w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                </li>
+                <li>
+                    <div class="div-block">
+                        <h4>Heading</h4>
+                    </div>
+                    <div>
+                        <p>The English Wikipedia is, with the Simple English Wikipedia, one of two English-language
+                            editions of Wikipedia, an online encyclopedia. It was founded on January 15, 2001, as
+                            Wikipedia's first edition, and, as of March 3, 2023, has the most articles of any edition,
+                            at 6,625,729</p>
+                    </div>
+                    <div class="divider w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                </li>
+                <li>
+                    <div class="div-block">
+                        <h4>Heading</h4>
+                    </div>
+                    <div>
+                        <p>The English Wikipedia is, with the Simple English Wikipedia, one of two English-language
+                            editions of Wikipedia, an online encyclopedia. It was founded on January 15, 2001, as
+                            Wikipedia's first edition, and, as of March 3, 2023, has the most articles of any edition,
+                            at 6,625,729</p>
+                    </div>
+                    <div class="divider w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+                </li>
+                <div class="upload"><button class="upl">+</button></div>
+            </ul>
+        </div>
+    </div>
+
 </body>
 
 </html>
